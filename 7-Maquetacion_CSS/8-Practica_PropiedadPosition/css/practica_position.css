@@ -1,0 +1,102 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: grey;
+}
+
+figure img {
+  width: 80%;
+}
+
+figure:hover {
+  z-index: 30;
+}
+
+figure {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 12px;
+  padding: 10px;
+  width: 25%;
+  text-align: center;
+}
+
+.container {
+  border: 1px solid black;
+  background-color: greenyellow;
+  position: relative;
+  margin: 100px auto;
+  height: 700px;
+  width: 85%;
+}
+
+.container nav {
+  border: 0.5px solid black;
+  background-color: darkgrey;
+  position: sticky;
+  top: 2px;
+}
+
+.container nav div {
+  color: white;
+  display: inline-block;
+  padding: 20px;
+  width: 20%;
+}
+
+.fixed-sidebar {
+  border: 1px solid black;
+  height: 50%;
+  top: 25%;
+  width: 90px;
+  position: fixed;
+  text-align: center;
+  font-size: 1em;
+}
+
+.fixed-sidebar ul {
+  list-style: none;
+  padding-left: 3px;
+}
+
+.fixed-sidebar img {
+  margin: 5%;
+  width: 90%;
+}
+
+#im1 {
+  position: absolute;
+  top: 30%;
+  left: 15%;
+  transform: rotate(-40deg);
+  z-index: 4;
+}
+
+#im2 {
+  position: absolute;
+  top: 32%;
+  left: 27%;
+  transform: rotate(45deg);
+  z-index: 3;
+}
+
+#im3 {
+  position: absolute;
+  top: 35%;
+  left: 40%;
+  -webkit-transform: rotate(-15deg);
+  transform: rotate(-20deg);
+  z-index: 2;
+}
+
+#im4 {
+  position: absolute;
+  top: 37%;
+  left: 50%;
+  -webkit-transform: rotate(15deg);
+  transform: rotate(10deg);
+  z-index: 1;
+}
