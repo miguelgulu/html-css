@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Imágenes , enlaces y rutas</title>
+</head>
+
+<body>
+
+    <!-- Si no pongo nada se respetan las dimensiones originales de la imagen-->
+    <!--Ruta relativa-->
+    <img alt="Foto del instituto" src="source_images/instituto.jpg">
+
+    <!-- Ruta absoluta -->
+    <img alt="Foto del instituto" src="/home/alunsiito/Documentos/LM/html-css/3-Añadiendo_contenido-Etiquetas_basicas/source_images/instituto.jpg">
+
+    <!-- Ruta expresada mediante URL-->
+    <img alt="Foto del instituto" src="https://lh3.googleusercontent.com/proxy/1xe5aHLhdidEMH7inx6bgnJhDC0mi1kNaTwTirxlp8-w6wfWUF3jkseJho5DkK5gh6vUFBRwDYVb6Y3Zx_guIptFLY_6bCxdpc7h6_c_7yLF_SbSTEcAa8-GbX6DP6SVepkd2aJarR2jpLKcPTDsvVWTZeLr5wev">
+
+    <!-- Si modifico una dimensión se respetan las proporciones-->
+    <img height="50px" alt="Foto del instituto" src="source_images/instituto.jpg">
+    <img width="50px" alt="Foto del instituto" src="source_images/instituto.jpg">
+
+    <!-- Si pongo ambas dimensiones puedo modificar las proporciones-->
+    <img height="300px" width="100px" alt="Foto del instituto" src="source_images/instituto.jpg">
+
+
+    <!-- Forma HTML5 para asociar imágenes con sus leyendas. Etiqueta Figure-->
+    <figure>
+        <img alt="Foto del instituto" src="source_images/instituto.jpg">
+        <figcaption>Foto del instituto con la etiqueta figure</figcaption>
+    </figure>
+
+    <!-- Los destino más básicos-->
+    <p><a href="http://www.iesfernandoaguilar.es/">Esto en un enlace en la propia página</a></p>
+
+    <p><a href="http://www.iesfernandoaguilar.es/" target="_blank">Esto en un enlace en la propia página</a></p>
+
+    <!-- Haciendo que una imagen sea enlace. Anidando etiquetas -->
+    <a href="http://www.iesfernandoaguilar.es/">
+        <img width="100px" alt="Foto del instituto" src="source_images/instituto.jpg">
+    </a>
+
+
+</body>
+
+</html>
